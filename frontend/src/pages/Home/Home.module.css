@@ -1,0 +1,37 @@
+
+
+.homeNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.homeNav > * {
+    margin: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.homeNav > *:hover {
+    scale: 1.02;
+}
+
+.scrollTopButton {
+
+    position: fixed;
+    right: calc(50vw - 4rem);
+    width: 8rem;
+    top: 1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}

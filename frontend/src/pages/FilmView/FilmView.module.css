@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    color: white;
+}
+
+.imageContainer {
+    width:  20rem;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    
+}
+
+.addReviewButton {
+    background-color: transparent;
+    color: white;
+    border: 0.1rem solid white;
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+.addReviewButton:hover {
+    background-color: white;
+    color: black
+}
+.addReviewButton:active {
+    scale: 1.01;
+}
+
+.infoContainer {
+
+    width: calc(100% - 20rem);
+    padding-left:  1rem;
+}
+
+.infoHeader {
+   
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+
+   
+}
+
+.backButton {
+    padding: 0rem 1rem;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.heartEmpty , .heartRed {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+
+.heartEmpty:active  , .heartRed:active  {
+    scale: 1.1;
+}
+
+.hearthRed * {
+    color: red !important;
+    background-color: red;
+}
+
+.textContainer p {
+    padding-bottom: 1rem;
+    
+
+}
+
+.textContainer {
+    border-bottom: 0.1rem solid white;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image {
+        padding-bottom: 1rem;
+        width: 80%;
+        
+    }
+
+
+    .infoContainer {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+

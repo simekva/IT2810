@@ -1,0 +1,61 @@
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 0.5rem;
+
+}
+
+.itemImg {
+    aspect-ratio: 3/4;
+    width: 100%;
+    height: 100%;
+
+  
+}
+
+.itemImg:hover {
+    scale: 1.02;
+}
+
+.imageContainer {
+    position: relative;
+  }
+  
+.noImageTitle {
+  position: absolute;
+  z-index: 2;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; 
+  color: white;
+  text-align: center;
+  padding: 20px; 
+  font-size: 1.5rem; 
+  font-weight: bold;
+  white-space: normal; 
+  overflow: hidden; 
+  word-break: break-word; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-sizing: border-box; 
+}
+
+.itemWithError:hover {
+  transform: translateY(-0.1rem);
+  scale: 1.01;
+}
+
+.itemWithError::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0); 
+  padding: 10px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

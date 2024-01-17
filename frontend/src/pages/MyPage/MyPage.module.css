@@ -1,0 +1,40 @@
+
+@import "../../index.css";
+
+
+.container {
+    padding: 1rem;
+    color: white;
+
+}
+
+.content {
+    padding: 1rem;
+}
+
+.tabPanel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tab , .notTab {
+    padding: 1rem;
+    width: calc(50% - .5rem);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.tab {
+    background-color: white;
+    color: var(--background);
+}
+
+.notTab {
+    border: 0.1rem solid white;
+
+
+}

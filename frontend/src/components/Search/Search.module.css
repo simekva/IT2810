@@ -1,0 +1,65 @@
+@import "../../index.css";
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.searchInputContainer {
+    width: 60%;
+    position: relative;
+}
+
+.searchButton {
+    color: white;
+    position: absolute;
+    right: -3rem;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+.searchInput:focus {
+    outline: none;
+}
+
+
+.searchResults {
+    position: absolute; 
+    top: 9.75rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 300px; 
+    width: 60%;
+    overflow-y: auto; 
+    background: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    z-index: 1000; 
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+}
+
+  .searchResults div {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; 
+    cursor: pointer; 
+    transition: background-color 0.2s; 
+  }
+  
+  .searchResults div:last-child {
+    border-bottom: none; 
+  }
+  
+  .searchResults div:hover {
+    background-color: #f8f8f8; 
+  }
